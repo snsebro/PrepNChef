@@ -158,7 +158,7 @@ src
 
 **Component Breakdown**
 
-*|  Component   |    Type    | State | Props | Description                                                      |
+|  Component   |    Type    | State | Props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
 |   Recipes    |   class    |   y   |   y   | _The gallery will render the recipes using card divs in **flex-gird**_ |
@@ -166,7 +166,7 @@ src
 |    Search    | functional |   n   |   y   | _Search input allowing user to search recipes by keywords_       |
 | Summary Card |   class    |   n   |   y   | _Component will contain meal plan summary and render on submit_  |
 | Contact Form | functional |   n   |   n   | _Will be a contact form rendered through a link in the header_   |
-|    Footer    | functional |   n   |   n   | _The footer will have links to contact and about info _          *|
+|    Footer    | functional |   n   |   n   | _The footer will have links to contact and about info _          |
 
 **Project Timeline Estimate**
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
