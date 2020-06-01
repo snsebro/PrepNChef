@@ -1,24 +1,26 @@
 ## Overview
- **Project Title: PrepNChef**
- **Description:** PrepNChef is a React App that will provide users with access to various meal options that they can use to meal prep for a set time period. Users will be able to serach recipes and receive cooking directions as well as ingridient lists and nutrient information.
+ **Project Title:** PrepNChef
+
+**Description:** PrepNChef is a React App that will provide users with access to various meal options that they can use to meal prep for a set time period. Users will be able to search recipes and receive cooking directions as well as ingredient lists and nutrient information.
 
  ## WireFrames
  **Adobe XD link:** https://xd.adobe.com/view/6b9d9a89-6f29-4f4c-42ee-c95085834a69-1dac/
 
 ## MVP
 **Goals**
---Create Search feature where users are able to lookup receipes according to input keywords
---Develop a 'Create Meal Plan' feature that allows users to select an amount of days and then save receipes for that amount fo days - feature should return receipes along with nutrient information and a list of all the ingridents neccessary for their entire meal plan
---Develop a single receipe view page that gives user inforamtion about selected receipe including: ingridients, cooking instructions, nutrient info, and equipment needed 
---Use media queries to create implement responsive design 
+- Create Search feature where users are able to lookup recipes according to input keywords
+- Develop a 'Create Meal Plan' feature that allows users to select an amount of days and then save recipes for that amount of days - feature should return recipes along with nutrient information and a list of all the ingredients necessary for their entire meal plan
+- Develop a single recipe view page that gives user information about selected recipe including: ingredients, cooking instructions, nutrient info, and equipment needed 
+- Use media queries to create implement responsive design 
 
 ## Data
 **API:** Spoonacular API
+
 **Sample Query:** https://api.spoonacular.com/recipes/findByIngredients?apiKey=897a667132264dbbb46d81ce62011dff&ingredients=chicken,+rice,+beans
 
-**Data Sample**
-``
-[
+**Data Sample:**
+
+``[
     {
         "id": 779916,
         "title": "Pressure Cooker Chicken and Rice",
@@ -114,9 +116,12 @@
         ],
         "likes": 423
     }
-]``
+]
+``
+
+
 
 ## Post MVP
--- Incorporate reviews on individual receipe component so users can gauge how a receipe was recieved
--- Add functionality that allows user to enter personal body metrics and tracks macros against health standards
+- Incorporate reviews on individual recipe component so users can gauge how a recipe was received
+- Add functionality that allows user to enter personal body metrics and tracks macros against health standards
 
