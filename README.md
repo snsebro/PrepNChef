@@ -20,7 +20,8 @@
 
 **Data Sample:**
 
-``[
+```
+[
     {
         "id": 779916,
         "title": "Pressure Cooker Chicken and Rice",
@@ -117,9 +118,67 @@
         "likes": 423
     }
 ]
-``
+```
+
+## Components
+
+**Component Hierarchy**
+```
+src
+|__ assets/
+      |__ data-tests
+      |__ fonts
+      |__ graphics
+      |__ images
+      |__ mockups
+|__ components/
+      |__ Header/
+        |__ Header.jsx
+        |__ Header.css
+      |__ Recipes/
+        |__ Recipes.jsx
+        |__ Recipes.css  
+      |__ Recipe Card/
+        |__ Recipe Card.jsx
+        |__ Recipe Card.css  
+      |__ Search/
+        |__ Search.jsx
+        |__ Search.css   
+      |__ Summary Card/
+        |__ Summary Card.jsx
+        |__ Summary Card.css  
+      |__ Contact Form/
+        |__ Contact Form.jsx
+        |__ Contact Form.css    
+      |__ Footer/
+        |__ Footer.jsx
+        |__ Footer.css
+```
 
 
+**Component Breakdown**
+
+|  Component   |    Type    | State | Props | Description                                                      |
+| :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
+|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
+|   Recipes    |   class    |   y   |   y   | _The gallery will render the posts using cards in **flex-gird**_ |
+| Recipe Card  |   class    |   n   |   y   | _The card will render when user clicks on a recipe from gallery  |
+|    Search    | functional |   n   |   y   | _Search input allowing user to search recipes by keywords_       |
+| Summary Card |   class    |   n   |   y   | _Component will contain meal plan summary and render on submit_  |
+| Contact Form | functional |   n   |   n   | _Will be a contact form rendered through a link in the header_   |
+|    Footer    | functional |   n   |   n   | _The footer will have links to contact and about info _          |
+
+**Project Timeline Estimate**
+| Task                | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------- | :------: | :------------: | :-----------: | :---------: |
+| Code Components     |    H     |     7 hrs      |     0 hrs     |     TBD     |
+| Setup State/API Data|    H     |     6 hrs      |     0 hrs     |     TBD     |
+| Setup Route/Link    |    H     |     4 hrs      |     0 hrs     |     TBD     |
+| Create Jest Tests   |    M     |     5 hrs      |     0 hrs     |     TBD     |
+| Create Storybook Comps. |    M     |     5 hrs      |     0 hrs     |     TBD     |
+| CSS                 |    M     |     3 hrs      |     0 hrs     |     TBD     |
+| Post MVP Goals      |    M     |     5 hrs      |     0 hrs     |     TBD     |
+| TOTAL               |          |     TBD        |     0 hrs     |     TBD     |
 
 ## Post MVP
 - Incorporate reviews on individual recipe component so users can gauge how a recipe was received
