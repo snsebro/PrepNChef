@@ -1,0 +1,111 @@
+.recipe-detail{
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.recipe-left{
+  /* border: 1px solid black; */
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  width: 60%;
+  text-align: center;
+}
+
+.transparent-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(82, 79, 79, 0.28);
+  width: 80%;
+  height: 65%;
+  border-radius: 20px;
+}
+
+.recipe-image{
+  background-color: white;
+  width: 65%;
+  height: 55%;
+  border-radius: 20px;
+  margin:20px 0px;
+  background-image: url();
+}
+
+.recipe-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.info-button {
+  background-color: #524F4F;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.diet-button {
+  background-color: #78947E;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin: 10px 5px;
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.recipe-summary{
+  width: 80%;
+  height: 70%;
+}
+
+.recipe-summary h1{
+ font-size: 1.5em;
+}
+
+.recipe-text{
+  font-family: 'Open Sans', sans-serif;
+  color:black;
+  text-align: left;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.recipe-text p{
+ font-size: 15px;
+ font-family: 'Open Sans', sans-serif;
+ text-align: center;
+ line-height: 15px;
+}
+
+.recipe-text li {
+  margin: 20px;
+}
+
+h1{
+  font-family: 'Libre Baskerville', serif;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+}

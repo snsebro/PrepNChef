@@ -1,0 +1,77 @@
+.select-div{
+    margin: 0 auto;
+    /* border: 3px solid black; */
+    /* height: 50%; */
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select-div h3{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+}
+
+.day-select{
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  padding: 0px 10px;
+  margin: 20px;
+}
+
+.diet-select{
+  width: 80%;
+  height: 160px;
+  border: none;
+  border-radius: 20px;
+  padding: 0px;
+  margin: 20px;
+  outline: none;
+  margin: 0 auto;
+}
+
+.diet-select input{
+margin: 0 auto;
+width: 20px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #524F4F;
+  font-weight: bold;
+}
+
+.diet-select label {
+  font-size: 10px;
+}
+
+.select-div button {
+  background-color: #524F4F;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 20px;
+  font-family: 'Open Sans', 
+}
+
+button{
+  font-family: 'Open Sans', sans-serif;
+}
+
+button :hover{
+  background-color: #2F2C2C
+}
+
+.diet-select{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* height: 50%;
+  width: 100%; */
+
+}

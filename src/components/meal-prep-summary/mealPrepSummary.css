@@ -1,0 +1,24 @@
+.summary-div{
+  width: 85%;
+  height: 80%;
+  display: flex;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary-div div{
+  height: 100%;
+  width: 35%;
+  margin: 0 10px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.summary-div h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+}
+

@@ -1,0 +1,41 @@
+header{
+  background-color: rgba(28, 28, 28, 0.5);
+  height: 40px;
+}
+
+header h1{
+  margin: 0;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+header ul{
+  margin: 0;
+  padding: 0 10px;
+  list-style-type: none;
+}
+
+header li{
+  display: inline;
+  line-height: 40px;
+  color: white;
+  margin: 0 
+}
+
+.nav-links{
+  float: right;
+  margin: 0 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.nav-links :hover{
+ font-weight: 400;
+ background-color: white;
+}
+
+.logo{
+  margin-left: 10px;
+  font-family: 'Libre Baskerville', serif;
+}
