@@ -21,7 +21,9 @@ class App extends Component {
       recipeDetail: null,
       mealDays: 0,
       dietRestrictions: '',
-      meals: null  
+      meals: null,
+      message: 'How many days are we planning for?',
+      generateMealsButton: true
     }
   }
 
@@ -40,15 +42,32 @@ class App extends Component {
     }))
   }
 
-  setRecipe = (recipes) => {
+  setRecipe = (recipe) => {
     this.setState({
-      recipes: recipes
+      recipes: recipe
     })
   }
 
   updateMealDays = (e) => {
     this.setState({
-      mealDays: e.target.value
+      mealDays: e.target.value,
+      message: 'Any diet restrictions',
+      meals: null,
+      generateMealsButton:true
+    })
+  }
+
+  resetMealDays = () => {
+    this.setState({
+      mealDays: 0,
+      message: 'How many days are we planning for?',
+      generateMealsButton: true
+    })
+  }
+
+  buttonToggle = () => {
+    this.setState({
+
     })
   }
 
@@ -60,28 +79,32 @@ class App extends Component {
   }
 
   getMeals = async () => {
-    let url = `https://api.spoonacular.com/recipes/random?apiKey=897a667132264dbbb46d81ce62011dff&number=${this.state.mealDays}&tags=${this.state.dietRestrictions}`
-
     const results = await axios(`https://api.spoonacular.com/recipes/random?apiKey=897a667132264dbbb46d81ce62011dff&number=${this.state.mealDays}&tags=${this.state.dietRestrictions}`)
 
     this.setState({
+      generateMealsButton: false,
       meals: results.data.recipes
+    }, () => {
+        this.setRecipe(this.state.meals)
     })
+
+  
+
   }
   
   render() {
     return (
       <div className='window-div'>
-        <Header setRecipe={this.setRecipe}/>
+        <Header setRecipe={this.setRecipe} resetMealDays={this.resetMealDays}/>
         <main>
           <Route path='/' exact>
-            <Home />
+            <Home resetMealDays={this.resetMealDays}/>
           </Route>
           <Route path='/MealPrep' exact>
-            <MealPrep updateMealDays={this.updateMealDays} updateDietRestrictions={this.updateDietRestrictions} mealDays={this.state.mealDays} dietRestrictions={this.state.dietRestrictions} getMeals={this.getMeals} setRecipe={this.setRecipe} recipes={this.state.recipes} meals={this.state.meals}/>
+            <MealPrep updateMealDays={this.updateMealDays} updateDietRestrictions={this.updateDietRestrictions} mealDays={this.state.mealDays} dietRestrictions={this.state.dietRestrictions} getMeals={this.getMeals} setRecipe={this.setRecipe} recipes={this.state.recipes} meals={this.state.meals} message={this.state.message} generateMealsButton={this.state.generateMealsButton}/>
           </Route>
           <Route path='/MealPrep/Summary'>
-            <MealPrepSummary meals={this.state.meals} recipes={this.state.recipes}/>
+            <MealPrepSummary meals={this.state.meals} recipes={this.state.recipes} setRecipe={this.setRecipe}/>
           </Route>
           <Route path='/Recipes' exact>
             <RecipeList recipes={this.state.recipes}/>

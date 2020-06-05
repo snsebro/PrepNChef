@@ -9,6 +9,7 @@ export default class MealPrep extends Component {
     super()
     this.state = {
       confirmDays: false,
+      getMeals: false,
       message: 'How many days are we planning for?',
       meals: null
     }
@@ -19,20 +20,12 @@ export default class MealPrep extends Component {
       message: 'Any diet restrictions?',
       confirmDays: true
     })
+
   }  
 
-  // getMeals = async () => {
-  //   let url = `https://api.spoonacular.com/recipes/random?apiKey=897a667132264dbbb46d81ce62011dff&number=${this.props.mealDays}&tags=${this.props.dietRestrictions}`
-
-  //   const results = await axios(`https://api.spoonacular.com/recipes/random?apiKey=897a667132264dbbb46d81ce62011dff&number=${this.props.mealDays}&tags=${this.props.dietRestrictions}`)
-
-  //   this.setState({
-  //     meals: results.data.recipes
-  //   })
-  // }
-
   render() {
-    let select = <select className='day-select' name='days' size='1' onChange={this.props.updateMealDays}>
+    let select = <select className='day-select' name='days' size='1' onChange={this.props.updateMealDays} >
+    <option value='0'>0</option>
     <option value='1'>1</option>
     <option value='2'>2</option>
     <option value='3'>3</option>
@@ -41,13 +34,6 @@ export default class MealPrep extends Component {
     <option value='6'>6</option>
     <option value='7'>7</option>
     </select>
-
-    // let dietSelect = <select className='diet-select'name='days' size='1' multiple onChange={this.updateDietRestrictions}>
-    // <option value='Keto'>Keto</option>
-    // <option value='Low Carb'>Low Carb</option>
-    // <option value='Nut Allergy'>Nut Allergy</option>
-    // <option value='Glutten Allergy'>Glutten Allergy</option>
-    // </select>
 
     let dietSelect =
       <div className='diet-select'>
@@ -75,22 +61,31 @@ export default class MealPrep extends Component {
       </div>
   
     let button
-    let summaryButton = <button onClick={this.updateMessage}>Meal Plan</button>
-    
-    this.state.confirmDays ? button = summaryButton : button = null
+    let button2
 
-    this.state.confirmDays ? select = dietSelect : select = select
+    let mealPlanButton = <button onClick={this.updateMessage}>Meal Plan Suammry</button>
+
+    let generateMealsButton = <button onClick={this.props.getMeals}>Generate Meal Plan</button>
+
+    // let generateMealsButton = <button onClick={this.props.getMeals}>Generate Plan</button>
+
+    this.props.generateMealsButton ? button2 = generateMealsButton : button2 = null
+    
+    this.props.mealDays && this.props.meals ?  button = mealPlanButton : button = null 
+
+    this.props.mealDays ? select = dietSelect : select = select
     
     return (
       <div className='select-div'>
-        <h3>{this.state.message}</h3>
+        <h3>{this.props.message}</h3>
           <>
             {select}
         </>
-        <button onClick={this.updateMessage}>Confirm</button>
+        {/* <button onClick={this.updateMessage}>Confirm</button> */}
         <Link to='/MealPrep/Summary'>{button}</Link>
-        <button onClick={this.props.getMeals}>URL</button>
-        <button onClick={() => this.props.setRecipe(this.props.meals)}>SET RECIPE</button>
+        {button2}
+        {/* <button onClick={this.props.getMeals}>Generate Meal Plan</button> */}
+        {/* <button onClick={() => this.props.setRecipe(this.props.meals)}>SET RECIPE</button> */}
       </div>
     )
   }

@@ -4,7 +4,11 @@ import { withRouter } from 'react-router-dom'
 
 import './mealPrepSummary.css'
 
- class MealPrepSummary extends Component {
+class MealPrepSummary extends Component {
+   
+  componentDidMount() {
+    this.props.setRecipe(this.props.meals)
+  }
 
   render() {
     return (
@@ -12,7 +16,7 @@ import './mealPrepSummary.css'
       <div className='summary-div'>
         <div>
           <h2>Meal Plan</h2>
-            {this.props.meals.map(meal => <Link to={'/Recipes/' + meal.title}><p>{meal.title}</p></Link>)}
+            {this.props.meals.map(meal => <Link to={'/Recipes/' + meal.title} key={meal.id}><p>{meal.title}</p></Link>)}
         </div>
         <div>
           <h2>Macro Summary</h2>

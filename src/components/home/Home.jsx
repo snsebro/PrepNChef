@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './home.css'
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div className='home-div'>
       <h1>PrepChef</h1>
