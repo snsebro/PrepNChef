@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import recipes from '../../recipes.json'
 import { withRouter } from 'react-router-dom'
 
 import './recipeDetail.css'
@@ -50,10 +49,10 @@ class RecipeDetail extends Component {
         <div className='recipe-detail'>
           <div className='recipe-left'>
             <div className='transparent-box'>
-              <div className='recipe-image'><img src={this.props.recipeDetail.image}></img></div>
+              <div className='recipe-image'><img alt={this.props.recipeDetail.title} src={this.props.recipeDetail.image}></img></div>
               <span>
-                <button className='info-button' onClick={this.showIngridients}>Ingredients</button>
-                <button className='info-button' onClick={this.showIngridients}>Directions</button>
+                <button className='info-button' onClick={this.showIngridients}>Details</button>
+                {/* <button className='info-button' onClick={this.showIngridients}>Directions</button> */}
               </span>
             </div>
           </div>

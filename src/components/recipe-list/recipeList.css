@@ -21,7 +21,7 @@
 }
 
 input{
-  margin: 50px;
+  margin: 50px 0px 50px 50px;
   outline: none;
   border: none;
   width: 400px;
@@ -60,4 +60,19 @@ a{
   font-size: 10px;
   font-weight: 200;
   color: black;
+}
+
+.search-button {
+  height: 40px;
+  width: 70px;
+  border-radius: 0px;
+  margin: 50px 0px;
+  line-height: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 200px;
+}
+
+button :hover {
+  background-color: black;
 }
