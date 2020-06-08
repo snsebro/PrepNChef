@@ -1,7 +1,5 @@
 .select-div{
     margin: 0 auto;
-    /* border: 3px solid black; */
-    /* height: 50%; */
     width: 100%;
     text-align: center;
     display: flex;
@@ -71,9 +69,6 @@ button :hover{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* height: 50%;
-  width: 100%; */
-
 }
 
 @media only screen and (max-device-width: 480px) {

@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import './recipeListCard.css'
 
 export default class RecipeListCard extends Component {
   render() {

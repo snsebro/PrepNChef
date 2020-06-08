@@ -49,8 +49,6 @@ export default class MealPrep extends Component {
 
         <input onChange={this.props.updateDietRestrictions} type="checkbox" name="Gluten Free" value="glutenFree" />
         <label htmlFor="Gluten Free"> Gluten Free</label><br />
-        {/* <input onChange={this.props.updateDietRestrictions} type="checkbox" name="Ketogenic" value="ketogenic" />
-        <label htmlFor="Ketogenic">Ketogenic</label><br /> */}
         <input onChange={this.props.updateDietRestrictions} type="checkbox" name="Vegetarian" value="vegetarian" />
         <label htmlFor="Vegetarian"> Vegetarian</label><br />
         <input onChange={this.props.updateDietRestrictions} type="checkbox" name="Lacto-Vegetarian" value="lactoVegetarian" />
@@ -61,12 +59,6 @@ export default class MealPrep extends Component {
         <label htmlFor="Vegan">Vegan</label>
         <input onChange={this.props.updateDietRestrictions} type="checkbox" name="Pescetarian" value="pescetarian" />
         <label htmlFor="Pescetarian">Pescetarian</label><br />
-        {/* <input onChange={this.props.updateDietRestrictions} type="checkbox" name="Paleo" value="paleo" />
-        <label htmlFor="Paleo">Paleo</label><br /> */}
-        {/* <input onChange={this.props.updateDietRestrictions} type="checkbox" name="Primal" value="primal" />
-        <label htmlFor="Primal">Primal</label><br />
-        <input onChange={this.props.updateDietRestrictions} type="checkbox" name="Whole30" value="whole30" />
-        <label htmlFor="Whole30">Whole30</label><br /> */}
       </div>
 
     let button

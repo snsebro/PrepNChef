@@ -52,7 +52,6 @@ class RecipeDetail extends Component {
               <div className='recipe-image'><img alt={this.props.recipeDetail.title} src={this.props.recipeDetail.image}></img></div>
               <span>
                 <button className='info-button' onClick={this.showIngridients}>Details</button>
-                {/* <button className='info-button' onClick={this.showIngridients}>Directions</button> */}
               </span>
             </div>
           </div>
