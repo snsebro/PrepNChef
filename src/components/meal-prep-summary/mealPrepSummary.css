@@ -13,7 +13,7 @@
   width: 35%;
   margin: 0 10px;
   border-radius: 20px;
-  background-color: white;
+  background-color: rgba(255,255,255,.5);
   text-align: center;
 }
 
@@ -26,7 +26,8 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   text-decoration: none;
-  color: white;
+  color: black;
+  font-weight: 300;
 }
 
 .summary-div button {
@@ -37,8 +38,39 @@
   border-radius: 20px;
   font-family: 'Open Sans', sans-serif;
   font-size: 8px;
+  padding: 2px 10px;
+  height: 15px;
 }
 
 a{
   text-decoration: none;
+}
+
+div .left{
+  text-align: left;
+}
+
+div .right{
+  text-align: right;
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; 
+  (iPhone) */
+.summary-div h2{
+font-size: 8px;
+}
+
+.summary-div p {
+  font-size: 8px;
+}
+
+.summary-div button {
+  font-size: 5px;
+  padding: 0px 5px;
+}
+
+.summary-div div {
+  margin: 0 3px;
+}
 }

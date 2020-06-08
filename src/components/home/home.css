@@ -23,8 +23,8 @@ text-align: center;
   margin: 25px 0px;
   padding: 25px 70px;
   font-weight: 300;
-  line-height: 20px;
-  font-size: 17px;
+  line-height: 23px;
+  font-size: 15px;
 }
 
 .home-div button {
@@ -37,6 +37,26 @@ text-align: center;
   margin: 20px;
 }
 
-.home-div button :hover{
+.home-div Link button :hover{
   background-color: #2F2C2C
+}
+
+@media only screen and (max-width: 768px) {
+  /* default iPad screens */
+.home-div p {
+  padding: 25px 0px
+}
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; 
+  (iPhone) */
+.home-div h1 {
+  font-size: 50px;
+}
+
+.home-div p {
+  font-size: 11px;
+  line-height: 20px;
+}
 }

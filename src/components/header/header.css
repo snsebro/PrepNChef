@@ -39,3 +39,22 @@ header li{
   margin-left: 10px;
   font-family: 'Libre Baskerville', serif;
 }
+
+@media only screen and (device-width: 768px) {
+  /* default iPad screens */
+
+  .nav-links {
+    margin: 0 5px;
+    font-size: 10px;
+  }
+
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+  .nav-links{
+    margin: 0 4px;
+    font-size: 9px;
+  }
+}

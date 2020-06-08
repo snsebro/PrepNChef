@@ -74,7 +74,7 @@
 }
 
 .recipe-summary{
-  width: 80%;
+  width: 90%;
   height: 70%;
 }
 
@@ -86,19 +86,19 @@
   font-family: 'Open Sans', sans-serif;
   color:black;
   text-align: left;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 12px;
+  line-height: 23px;
 }
 
 .recipe-text p{
- font-size: 15px;
+ font-size: 12px;
  font-family: 'Open Sans', sans-serif;
  text-align: center;
  line-height: 15px;
 }
 
 .recipe-text li {
-  margin: 20px;
+  margin: 5px;
 }
 
 h1{
@@ -107,4 +107,87 @@ h1{
 
 p{
   font-family: 'Open Sans', sans-serif;
+}
+
+@media only screen and (device-width: 768px) {
+  /* default iPad screens */
+
+  .recipe-left{
+    width: 50%;
+  }
+
+  .recipe-right{
+    width: 50%;
+  }
+
+  .transparent-box{
+    height:40%;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+  .recipe-summary h1{
+    font-size: .7em;
+  }
+
+  .diet-button{
+    font-size: 5px;
+  }
+
+  .recipe-text{
+    font-size: 6px;
+    line-height: 12px;
+    font-weight: 100;
+    text-align: justify;
+  }
+
+  .recipe-text p {
+    font-size: 6px;
+    line-height: 10px;
+  }
+
+  .transparent-box{
+    height: 30%;
+    margin-top: 100px;
+  }
+
+  .info-button{
+    font-size: 7px;
+    padding: 4px 10px;
+    margin-top: 0px;
+  }
+
+  .recipe-left{
+    align-items: flex-start;
+  }
+
+  .input {
+    width: 170px;
+    font-size: 15px;
+    margin: 0px;
+    height: 40px;
+    line-height: 30px;
+  }
+  
+  .search-button {
+    height: 37px;
+    font-size: 10px;
+    width: 50px;
+  }
+
+  .recipe-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .recipe-list div {
+    margin: 5px;
+  }
+
+  .recipe-image-div p {
+    font-size: 5px;
+  }
 }

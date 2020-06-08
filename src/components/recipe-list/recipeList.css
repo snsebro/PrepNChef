@@ -8,8 +8,8 @@
 }
 
 .recipe-list div{
-  height: 200px;
-  width: 200px;
+  height: 160px;
+  width: 160px;
   border-radius: 20px;
   background-color: white ;
   box-shadow: 5px 5px 10px #524F4F;
@@ -71,8 +71,59 @@ a{
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   font-weight: 200px;
+  outline: none;
+  border: none;
+  background-color: #524F4F;
+  color: white;
+
 }
 
 button :hover {
   background-color: black;
+}
+
+@media only screen and (device-width: 768px) {
+  /* default iPad screens */
+
+  .recipe-list{
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .recipe-list div{
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+  }
+
+  .recipe-image-div p{
+    font-size: 7px;
+  }
+
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; 
+  (iPhone) */
+
+.recipe-list{
+  justify-content: center;
+}  
+
+.recipe-list div {
+  height: 80px;
+  width: 80px;
+}
+
+input {
+  width:150px;
+  height: 37px;
+  font-size: 15px;
+}
+
+.recipe-image-div p {
+  font-size: 4px;
+}
 }

@@ -98,7 +98,7 @@ class App extends Component {
   render() {
     return (
       <div className='window-div'>
-        <Header setRecipe={this.setRecipe} resetMealDays={this.resetMealDays} />
+        <Header setRecipe={this.setRecipe} resetMealDays={this.resetMealDays} meals={this.state.meals} mealIds={this.state.mealIds}/>
         <main>
           <Route path='/' exact>
             <Home resetMealDays={this.resetMealDays} />

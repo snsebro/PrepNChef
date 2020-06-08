@@ -79,18 +79,17 @@ class MealPrepSummary extends Component {
           <div>
             <h2>Macro Summary</h2>
             <p>{servings} Servings</p>
-            <p>Amount per serving</p>
-            <p>Calories {calories.amount}g {calories.percentOfDailyNeeds}%</p>
-            <p>% Daily Value*</p>
-            <p>Total Fat {totalFat.amount}g {totalFat.percentOfDailyNeeds}%</p>
-            <p>Saturated Fat {saturatedFat.amount}g {saturatedFat.percentOfDailyNeeds}%</p>
-            <p>Cholesterol {cholesterol.amount}mg {cholesterol.percentOfDailyNeeds}%</p>
-            <p>Sodium {sodium.amount}mg {sodium.percentOfDailyNeeds}%</p>
-            <p>Total Carb. {totalCarbs.amount}g {totalCarbs.percentOfDailyNeeds}%</p>
-            <p>Net Carb. {netCarbs.amount}g {netCarbs.percentOfDailyNeeds}%</p>
-            <p>Dietary Fiber {fiber.amount}g {fiber.percentOfDailyNeeds}</p>
-            <p>Sugar {sugar.amount}g {sugar.percentOfDailyNeeds}%</p>
-            <p>Protein {protein.amount}g {protein.percentOfDailyNeeds}%</p>
+            <p>Amount per serving/ % Daily Value</p>
+            <p>Calories {calories.amount}g / {calories.percentOfDailyNeeds}%</p>
+            <p>Total Fat {totalFat.amount}g / {totalFat.percentOfDailyNeeds}%</p>
+            <p>Saturated Fat {saturatedFat.amount}g / {saturatedFat.percentOfDailyNeeds}%</p>
+            <p>Cholesterol {cholesterol.amount}mg / {cholesterol.percentOfDailyNeeds}%</p>
+            <p>Sodium {sodium.amount}mg / {sodium.percentOfDailyNeeds}%</p>
+            <p>Total Carb. {totalCarbs.amount}g / {totalCarbs.percentOfDailyNeeds}%</p>
+            <p>Net Carb. {netCarbs.amount}g / {netCarbs.percentOfDailyNeeds}%</p>
+            <p>Dietary Fiber {fiber.amount}g / {fiber.percentOfDailyNeeds}%</p>
+            <p>Sugar {sugar.amount}g / {sugar.percentOfDailyNeeds}%</p>
+            <p>Protein {protein.amount}g / {protein.percentOfDailyNeeds}%</p>
           </div>
           <div>
             <h2>Shopping List</h2>
