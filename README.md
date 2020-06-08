@@ -171,14 +171,14 @@ src
 **Project Timeline Estimate**
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Code Components     |    H     |     7 hrs      |     0 hrs     |     TBD     |
-| Setup State/API Data|    H     |     6 hrs      |     0 hrs     |     TBD     |
-| Setup Route/Link    |    H     |     4 hrs      |     0 hrs     |     TBD     |
+| Code Components     |    H     |     7 hrs      |     8 hrs     |     8 hrs   |
+| Setup State/API Data|    H     |     6 hrs      |     4 hrs     |     4 hrs   |
+| Setup Route/Link    |    H     |     4 hrs      |     3 hrs     |     3 hrs   |
 | Create Jest Tests   |    M     |     5 hrs      |     0 hrs     |     TBD     |
 | Create Storybook Comps. |    M     |     5 hrs      |     0 hrs     |     TBD     |
-| CSS                 |    M     |     3 hrs      |     0 hrs     |     TBD     |
-| Post MVP Goals      |    M     |     5 hrs      |     0 hrs     |     TBD     |
-| TOTAL               |          |     TBD        |     0 hrs     |     TBD     |
+| CSS                 |    M     |     3 hrs      |     4 hrs     |     4 hrs   |
+| Post MVP Goals      |    M     |     5 hrs      |     2 hrs     |     2 hrs   |
+| TOTAL               |          |     35 hrs     |     21 hrs    |     21 hrs  |
 
 ## Post MVP
 - Incorporate reviews on individual recipe component so users can gauge how a recipe was received
