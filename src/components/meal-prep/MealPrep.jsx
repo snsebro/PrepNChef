@@ -64,7 +64,7 @@ export default class MealPrep extends Component {
     let button
     let button2
 
-    let mealPlanButton = <button onClick={this.props.getMealIds}>Meal Plan Suammry</button>
+    let mealPlanButton = <button onClick={this.props.getMealIds}>Meal Plan Summary</button>
 
     let generateMealsButton = <button onClick={this.props.getMeals}>Generate Meal Plan</button>
 
